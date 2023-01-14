@@ -1,5 +1,6 @@
 /* Google Fonts:: Poppins 500 Medium - Import Style Sheet Code */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 
 /* Common Styles/Base Styles/Utilities */
 body {
@@ -96,13 +97,25 @@ hr {
 }
 
 /* Latest Courses section styles */
+.courses {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 24px;
+}
+
 .course-banner img {
     width: 224.38px;
     height: 105.51px;
 }
 
+.course-title {
+    font-family: 'Roboto', sans-serif;
+}
+
 .course-info {
     display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .fa-star {
@@ -117,4 +130,18 @@ hr {
 .fa-star.empty {
     background: #AEAEAE;
     opacity: 0.25;
+}
+
+.course-duration {
+    background: #FEE5DF;
+    border-radius: 14.6913px;
+    padding: 5px;
+    color: #ED6B4F;
+    font-family: Open Sans;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+
 }
